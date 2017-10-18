@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .header {
@@ -81,7 +82,7 @@
     outline: none;
 }
 
-.search>button::after {
+.search > button::after {
     position: absolute;
     top: 26px;
     left: 260px;
@@ -91,7 +92,7 @@
     border-top: 6px solid #838383;
 }
 
-.search>button:hover ~ div.under_browse {
+.search > button:hover ~ div.under_browse {
     display: block;
 }
 
@@ -137,7 +138,7 @@ div.under_browse h1 {
 div.under_browse hr {
     width: 239px;
     height: 1px;
-    margin 0;
+    margin: 0;
     background-color: #e8e8e8;
 }
 
@@ -190,12 +191,9 @@ a.fsearch {
     display: block;
     float: left;
     margin: 0;
-    width: 14px;
-    height: 14px;
     color: #a4a4a4;
     width: 39px;
     height: 41px;
-    color: #a4a4a4;
     padding: 12px 10px;
     border: 1px solid #e6e6e6;
     border-radius: 0 3px 3px 0;
@@ -316,7 +314,6 @@ div.under_basket ul li p {
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 10px;
 }
 
 i.fa-times-circle-o {
@@ -348,7 +345,7 @@ div.under_basket button {
     border: 1px solid #eaeaea;
     background-color: #ffffff;
     color: #4a4a4a;
-    font-family: Lato;
+    font-family: sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -420,11 +417,11 @@ nav li:first-child {
     margin-left: 0;
 }
 
-nav>ul>li:hover {
+nav > ul > li:hover {
     background-color: gainsboro;
 }
 
-nav>ul>li:hover .mega_menu {
+nav > ul > li:hover .mega_menu {
     display: flex;
 }
 
@@ -510,7 +507,8 @@ main .picture1 {
     background-color: #e8e8e8;
 }
 
-main .picture1 img {}
+main .picture1 img {
+}
 
 main .picture1 .textonpicrel {
     position: relative;
@@ -598,7 +596,7 @@ main .block1 .offer p span {
     letter-spacing: 0.75px;
 }
 
-main .container>h1 {
+main .container > h1 {
     margin: 80px 0 0 0;
     padding: 0;
     text-align: center;
@@ -609,7 +607,7 @@ main .container>h1 {
     letter-spacing: 0.75px;
 }
 
-main .container>p {
+main .container > p {
     margin: 16px 0;
     padding: 0;
     text-align: center;
@@ -633,12 +631,17 @@ main .container>p {
     width: 265px;
     overflow: inherit;
 }
-
+.fetured_item a{
+    text-decoration: none;
+}
+.fetured_item img {
+    width: 100%;
+}
 .fetured_item:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
-.fetured_item:hover>img {
+.fetured_item:hover > img {
     filter: brightness(50%);
 }
 
@@ -649,8 +652,8 @@ main .container>p {
 .fetured_item_hover {
     display: none;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 265px;
     height: 280px;
     text-decoration: none;
@@ -666,7 +669,7 @@ main .container>p {
     align-items: center;
 }
 
-.fetured_item_hover>.flex span {
+.fetured_item_hover > .flex span {
     margin-left: 5px;
     font-family: sans-serif;
     color: #ffffff;
@@ -694,7 +697,7 @@ main .container>p {
     float: right;
 }
 
-.fetured_item>span {
+.fetured_item a > span {
     margin: 0 15px;
     color: #f16d7f;
     font-family: sans-serif;
@@ -735,12 +738,12 @@ main .container>p {
     position: relative;
 }
 
-.block_offer>img {
+.block_offer > img {
     width: 770px;
     height: 532px;
 }
 
-.block_offer>p {
+.block_offer > p {
     position: absolute;
     top: 146px;
     left: 39px;
@@ -756,12 +759,12 @@ main .container>p {
     line-height: 35px;
 }
 
-.block_offer>p>span:first-child {
+.block_offer > p > span:first-child {
     color: #f16d7f;
     letter-spacing: 1.5px;
 }
 
-.block_offer>p>span:last-child {
+.block_offer > p > span:last-child {
     font-size: 32px;
     letter-spacing: 0.9px;
 }
@@ -810,7 +813,7 @@ main .container>p {
     display: block;
 }
 
-.picture_bottom>.container {
+.picture_bottom > .container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -829,7 +832,7 @@ main .container>p {
     float: left
 }
 
-.left_bot>p:first-child {
+.left_bot > p:first-child {
     color: #222224;
     font-family: sans-serif;
     font-size: 16px;
@@ -842,16 +845,15 @@ main .container>p {
     margin-left: 100px;
 }
 
-.left_bot>p:nth-child(3) {
+.left_bot > p:nth-child(3) {
     color: #f16d7f;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 700;
-    font-weight: 700;
     letter-spacing: 0.4px;
 }
 
-.left_bot p:nth-child(3)>span {
+.left_bot p:nth-child(3) > span {
     color: #222224;
     font-size: 12px;
     font-weight: 300;
@@ -937,7 +939,7 @@ main .container>p {
     background-color: #e1e1e1;
 }
 
-footer>.container {
+footer > .container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -962,7 +964,8 @@ footer .text_block p:first-of-type {
     padding-top: 50px;
 }
 
-footer ul {}
+footer ul {
+}
 
 footer ul li {
     list-style-type: none;
@@ -1022,7 +1025,7 @@ footer .brand .container span {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    widows: 190px;
+    width: 190px;
 }
 
 footer .brand .container a {
@@ -1039,13 +1042,13 @@ footer .brand .container a {
     margin: 0 5px;
 }
 
-footer .brand .container a:nth-child(2) {
-    color: #f7f7f8;
-    background-color: #f16d7f;
+footer .brand .container a:visited {
+    opacity: 0.3;
 }
 
 footer .brand .container a:hover {
-    opacity: 0.3;
+    color: #f7f7f8;
+    background-color: #f16d7f;
 }
 
 .breadcrumps {
@@ -1059,155 +1062,179 @@ footer .brand .container a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.breadcrumps .container h1{
+
+.breadcrumps .container h1 {
     margin: 0;
     color: #f16d7f;
-font-family: sans-serif;
-font-size: 24px;
-font-weight: 600;
-line-height: 20px;
-text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
 }
-.breadcrumps .container div{
+
+.breadcrumps .container div {
     display: inline-block;
 }
+
 .breadcrumps .container div .section {
     display: inline-block;
     text-decoration: none;
     color: #636363;
-font-weight: 300;
-font-family: sans-serif;
-font-size: 14px;
-line-height: 20px;
-text-transform: uppercase;
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
 }
+
 .breadcrumps .container div .section.active {
     color: #f16d7f;
     font-weight: 700;
 }
+
 .order {
     margin-top: 50px;
 }
+
 .order h2 {
     color: #222222;
-font-family: sans-serif;
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
 .order .form_body {
     margin: 0;
     padding: 37px 0;
     border-bottom: 1px solid #e8e8e8;
     color: #b3b2b2;
-font-family: sans-serif;
-font-size: 13px;
-font-weight: 400;
-line-height: 20px;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
 }
-.order .form_body h3{
+
+.order .form_body h3 {
     color: #222222;
-font-family: sans-serif;
-font-size: 13px;
-font-weight: 400;
-text-transform: uppercase;    
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
+
 .order .form_body .form_block {
     display: none;
     flex-flow: row nowrap;
-justify-content: center;
+    justify-content: center;
     margin: 0 35px;
 }
-.order .form_body form{
+
+.order .form_body form {
     width: 50%;
 }
-.order .form_body.active .form_block{
+
+.order .form_body.active .form_block {
     display: flex;
 }
-.order .form_body p{
-    margin: 0;    
+
+.order .form_body p {
+    margin: 0;
 }
+
 .order .form_body .checkout {
     margin: 33px 0;
 }
-.order .form_body  label {
-        color: #222222;
-font-size: 12px;
-font-weight: 400;
+
+.order .form_body label {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 400;
 }
+
 .order .form_body .checkout label {
     margin: 20px 0;
 
-text-transform: uppercase;
+    text-transform: uppercase;
     display: flex;
     align-content: center;
 }
+
 .order .form_body .checkout label input[type="radio"] {
     display: inline;
-    margin-top: 0px;
-    margin-right:14px;
+    margin-top: 0;
+    margin-right: 14px;
     width: 17px;
-height: 17px;
-border: 2px solid #555555;
-background-color: #ffffff;
+    height: 17px;
+    border: 2px solid #555555;
+    background-color: #ffffff;
 }
+
 .order .form_body ul {
     padding: 0;
 }
+
 .order .form_body ul li {
     list-style: none;
 }
+
 .order .form_body ul li:before {
-  content: '\f101'; /* FontAwesome Unicode fa-angle-double-right*/
-  font-family: FontAwesome;
-  display: inline-block;
-  width: 12px;
+    content: '\f101'; /* FontAwesome Unicode fa-angle-double-right*/
+    display: inline-block;
+    width: 12px;
 }
+
 .order .form_body button {
     margin-top: 36px;
     width: 183px;
-height: 53px;
-border: none;
-background-color: #ffffff;
+    height: 53px;
+    background-color: #ffffff;
     border: 1px solid #eaeaea;
     color: #4a4a4a;
-font-size: 14px;
-font-weight: 700;
-text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     cursor: pointer;
 }
+
 .order .form_body button:hover {
     background-color: #eaeaea;
 }
+
 .order .form_body label {
     display: block;
     margin: 20px 0;
-    
+
 }
+
 .order .form_body input {
     margin-top: 14px;
     display: block;
     width: 393px;
-height: 48px;
-border: 1px solid #eaeaea;
-background-color: #ffffff;
+    height: 48px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
     padding: 10px 20px;
 }
-.order .form_body span{
+
+.order .form_body span {
     color: #ff0d0d;
-font-size: 13px;
-font-weight: 400;
-line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
 }
-.order .form_body .forgot{
+
+.order .form_body .forgot {
     display: inline-block;
     margin-left: 30px;
     text-decoration: none;
     color: #222222;
-font-size: 14px;
-font-weight: 400;
-line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
+
 .order .form_body .forgot:hover {
-    color:cornflowerblue;
+    color: cornflowerblue;
 }

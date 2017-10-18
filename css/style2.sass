@@ -1,0 +1,117 @@
+$width-all: 1600px
+$height-image: 779px
+$width-container: 1140px
+$margin-add-products: 800px
+.container
+  width: $width-container
+  margin: 0 auto
+  padding: 0 30px
+
+.product
+  display: flex
+  flex-flow: column nowrap
+  align-items: center
+  width: 100%
+  height: $height-image
+  background-color: #f7f7f7
+  position: relative
+  img
+    margin-top: 10px
+  .detail
+    @extend .container
+    width: $width-container
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    position: absolute
+    top: $height-image - 66px
+    z-index: 1
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    padding: 74px 262px 122px
+    line-height: 24px
+    h3
+      font-size: 14px
+      font-weight: 700
+      text-transform: uppercase
+      color: #f16d7f
+      display: block
+      border-bottom: 1px solid #eaeaea
+    hr
+      height: 3px
+      width: 65px
+      background: #ef5b70
+      margin-top: -16px
+      border: none
+    h4
+      color: #4d4d4d
+      font-size: 18px
+      font-weight: 400
+      text-transform: uppercase
+      margin: 16px 0
+    p
+      color: #5e5e5e
+      font-size: 14px
+      font-weight: 300
+    .property
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      p
+        margin: 0 22px
+        color: #b9b9b9
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        span
+          color: #2f2f2f
+    .price
+      display: block
+      width: 645px
+      padding-bottom: 40px
+      border-bottom: 2px solid #eaeaea
+      color: #ef5b70
+      font-size: 24px
+      font-weight: 700
+      text-align: center
+    .add_block
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      fieldset
+        border: 0
+        margin: 26px 0
+        select,
+        input
+          width: 146px
+          height: 37px
+          border: 1px solid #eaeaea
+          background-color: #ffffff
+          padding: 10px 20px
+          color: #bcbcbc
+          font-size: 13px
+          font-weight: 400
+    button
+      width: 100%
+      height: 57px
+      border: 1px solid #ef5b70
+      background-color: #ffffff
+      color: #ef5b70
+      font-size: 16px
+      font-weight: 700
+      cursor: pointer
+    button:hover
+      background-color: #eaeaea
+.add_products
+  @extend .container
+  margin-top: $margin-add-products
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  h1
+    color: #4d4d4d
+    font-size: 24px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
