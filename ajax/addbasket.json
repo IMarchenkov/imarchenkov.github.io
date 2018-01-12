@@ -1,0 +1,50 @@
+{
+  "1": {
+    "id": 1,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-2.png"
+  },
+  "2": {
+    "id": 2,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-3.png"
+  },
+  "3": {
+    "id": 3,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-4.png"
+  },
+  "4": {
+    "id": 4,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-5.png"
+  },
+  "5": {
+    "id": 5,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-6.png"
+  },
+  "6": {
+    "id": 6,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-7.png"
+  },
+  "7": {
+    "id": 7,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-8.png"
+  },
+  "8": {
+    "id": 8,
+    "price": 52.00,
+    "title": "Mango People T-shirt",
+    "image": "img/layer-9.png"
+  }
+}

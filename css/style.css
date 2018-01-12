@@ -227,7 +227,7 @@ a.fsearch {
     font-size: 12px;
     font-weight: 700;
 }
-
+div.under_basket,
 a.basket:hover ~ div.under_basket {
     display: block;
 }
@@ -243,7 +243,6 @@ div.under_basket {
     left: -20px;
     display: none;
     width: 265px;
-    height: 443px;
     padding: 0 15px;
     border: 1px solid #ececec;
     border-radius: 5px;
